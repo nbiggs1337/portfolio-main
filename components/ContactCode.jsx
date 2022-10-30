@@ -8,41 +8,41 @@ const ContactCode = () => {
       </p>
       <p className={styles.line}>
         &nbsp;&nbsp;&nbsp;website:{' '}
-        <a href="https://nitinranganath.me" target="_blank" rel="noopener">
-          nitinranganath.me
+        <a href="https://noahbiggs.me" target="_blank" rel="noopener">
+          noahbiggs.me
         </a>
         ;
       </p>
       <p className={styles.line}>
         &nbsp;&nbsp;&nbsp;email:{' '}
         <a
-          href="mailto:nazariy@cleverprogrammer.com"
+          href="mailto:nbiggs1337@gmail.com"
           target="_blank"
           rel="noopener"
         >
-          nazariy@cleverprogrammer.com
+          nbiggs1337@gmail.com
         </a>
         ;
       </p>
       <p className={styles.line}>
         &nbsp;&nbsp;&nbsp;github:{' '}
-        <a href="https://github.com/nazariy995" target="_blank" rel="noopener">
-          nazariy995
+        <a href="https://github.com/nbiggs1337" target="_blank" rel="noopener">
+          nbiggs1337
         </a>
         ;
       </p>
       <p className={styles.line}>
         &nbsp;&nbsp;&nbsp;linkedin:{' '}
         <a
-          href="https://www.linkedin.com/in/nitinranganath/"
+          href="https://www.linkedin.com/in/noahbiggs/"
           target="_blank"
           rel="noopener"
         >
-          nitinranganath
+          noahbiggs
         </a>
         ;
       </p>
-      <p className={styles.line}>
+      {/* <p className={styles.line}>
         &nbsp;&nbsp;&nbsp;twitter:{' '}
         <a
           href="https://www.twitter.com/iamnitinr"
@@ -99,7 +99,7 @@ const ContactCode = () => {
           itsnitinr
         </a>
         ;
-      </p>
+      </p> */}
       <p className={styles.line}>&#125;</p>
     </div>
   );

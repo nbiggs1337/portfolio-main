@@ -1,7 +1,8 @@
+require("dotenv").config()
 const { Client } = require('@notionhq/client');
 
 const notion = new Client({
-  auth: "secret_jreKs121c5vqST7PisE5m9as68y7rkfqvTndc7jpdWw",
+  auth: process.env.NOTION_API,
 });
 
 export default async (req, res) => {
@@ -9,10 +10,11 @@ export default async (req, res) => {
     return res.status(405).json({ msg: 'Only POST requests are allowed' });
   }
   try {
-    const { name, email, subject, message } = JSON.parse(req.body);
+    const { name, email, subject, message, company, number } = JSON.parse(req.body);
+    const date = new Date()
     await notion.pages.create({
       parent: {
-        database_id: "9d9b8dfe0ff74092b4971259845ab6e7",
+        database_id: process.env.DB_ID,
       },
       properties: {
         Name: {
@@ -41,6 +43,33 @@ export default async (req, res) => {
             {
               text: {
                 content: message,
+              },
+            },
+          ],
+        },
+        Company: {
+          rich_text: [
+            {
+              text: {
+                content: company,
+              },
+            },
+          ],
+        },
+        Number: {
+          rich_text: [
+            {
+              text: {
+                content: number,
+              },
+            },
+          ],
+        },
+        Date: {
+          rich_text: [
+            {
+              text: {
+                content: date.toLocaleString(),
               },
             },
           ],

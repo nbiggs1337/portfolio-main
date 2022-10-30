@@ -1,18 +1,29 @@
 [
   {
     "id": 1,
-    "name": "YouTube Clone",
+    "name": "Portfolio",
     "image": "https://imgur.com/O7kt2Lp.png",
-    "description": "A platform for web developers to showcase their projects",
-    "tags": ["react", "api", "css", "react native", "styled-components"],
-    "source_code": "https://github.com/CleverProgrammers/react-native-youtube-clone"
+    "description": "This site you are currently viewing, a general overview of the results my entire coding journey to this point.",
+    "tags": ["node", "next", "react","api", "sdk", "css", "styled-components", "ssl"],
+    "source_code": "https://github.com/nbiggs1337/portfolio-main",
+    "demo": "https://www.noahbiggs.io"
   },
   {
-    "id": 1,
-    "name": "YouTube Clone",
+    "id": 2,
+    "name": "RateMyCodingBootcamp",
     "image": "https://imgur.com/O7kt2Lp.png",
-    "description": "A platform for web developers to showcase their projects",
-    "tags": ["react", "api", "css", "react native", "styled-components"],
-    "source_code": "https://github.com/CleverProgrammers/react-native-youtube-clone"
+    "description": "A platform for coding bootcamp students to share their opinions on the school they paid for & attended",
+    "tags": ["c#","c-sharp", "asp.net", "mysql", "microsoft visual studio", "styled-components", "cshtml", "css", "ssl"],
+    "source_code": "https://github.com/nbiggs1337/RMCB",
+    "demo": "https://www.google.com"
+  },
+  {
+    "id": 3,
+    "name": "HODL View",
+    "image": "https://imgur.com/O7kt2Lp.png",
+    "description": "A platform to allow users to monitor their crypto-currency portfolio value in real-time.",
+    "tags": ["node", "react", "mongodb","express","jsonwebtoken", "reach-router", "css", "material-ui", "styled-components", "ssl"],
+    "source_code": "https://github.com/nbiggs1337/HODLView",
+    "demo": "https://www.hodlview.io"
   }
 ]

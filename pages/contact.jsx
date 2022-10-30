@@ -7,19 +7,23 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [number, setNumber] = useState('');
+  const [company, setCompany] = useState('');
 
   const submitForm = async (e) => {
     e.preventDefault();
     const res = await fetch(`/api/contact`, {
       method: 'POST',
-      body: JSON.stringify({ name, email, subject, message }),
+      body: JSON.stringify({ name, email, subject, message, company, number }),
     });
     if (res.ok) {
-      alert('Your response has been received!');
+      alert('Your response has been received! I will reach out to you shorty!');
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
+      setNumber("")
+      setCompany("")
     } else {
       alert('There was an error. Please try again in a while.');
     }
@@ -57,6 +61,31 @@ const ContactPage = () => {
                 required
               />
             </div>
+          </div>
+          <div className={styles.flex}>
+            <div>
+              <label htmlFor="Number">Phone Number</label>
+              <input
+                type="text"
+                name="number"
+                id="number"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="Company">Company</label>
+              <input
+                type="text"
+                name="company"
+                id="company"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+                required
+              />
+            </div>
+            
           </div>
           <div>
             <label htmlFor="name">Subject</label>

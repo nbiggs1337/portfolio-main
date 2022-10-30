@@ -51,10 +51,16 @@
   background: rgba(25, 118, 210, 0.25);
 }
 
-.bulma {
+.cshtml {
   border: 0.1rem solid rgb(0, 209, 178);
 }
-.bulma:hover {
+.cshtml:hover {
+  background: rgb(0, 209, 178, 0.25);
+}
+.sdk {
+  border: 0.1rem solid rgb(0, 209, 178);
+}
+.sdk:hover {
   background: rgb(0, 209, 178, 0.25);
 }
 
@@ -71,11 +77,24 @@
 .tailwind:hover {
   background: rgba(6, 182, 212, 0.25);
 }
+.c-sharp {
+  border: 2px solid rgb(6, 182, 212);
+}
+.c-sharp:hover {
+  background: rgba(6, 182, 212, 0.25);
+}
 
-.react-query {
+.mysql {
   border: 2px solid rgb(255, 65, 84);
 }
-.react-query:hover {
+.mysql:hover {
+  background: rgba(255, 65, 84, 0.25);
+}
+
+.ssl {
+  border: 2px solid rgb(255, 65, 84);
+}
+.ssl:hover {
   background: rgba(255, 65, 84, 0.25);
 }
 
