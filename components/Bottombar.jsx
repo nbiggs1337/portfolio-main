@@ -11,7 +11,7 @@ const Bottombar = () => {
     <footer className={styles.bottomBar}>
       <div className={styles.container}>
         <a
-          href="https://github.com/itsnitinr/vscode-portfolio"
+          href="https://github.com/nbiggs1337/portfolio-main"
           target="_blank"
           rel="noreferrer"
           className={styles.section}
@@ -28,8 +28,15 @@ const Bottombar = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.section}>
+        <a
+          href="https://nextjs.org/"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.section}
+        >
           <VercelIcon className={styles.icon} />
           <p>Powered by Next.js</p>
+          </a>
         </div>
         <div className={styles.section}>
           <CheckIcon className={styles.icon} />

@@ -4,7 +4,7 @@ module.exports = {
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
       'imgur.com',
-      "https://noahbiggs.me"
+      "https://www.noahbiggs.info"
     ],
   }
 };
