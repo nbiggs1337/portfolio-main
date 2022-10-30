@@ -4,7 +4,7 @@ module.exports = {
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
       'imgur.com',
-      "https://portfolio-nazariy995.vercel.app"
+      "https://noahbiggs.me"
     ],
   }
 };
